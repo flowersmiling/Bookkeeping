@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========= App Styles  ========= */
+
+body {
+  background: white;
+}
+
+.my-app {
+  width: 100%;
+  height: 80vh;
+}
+
+/* ========= Grid Styles  ========= */
+
+.ag-center-cols-container .MuiInput-underline:before {
+  display: none !important;
+}
+
+.ag-status-bar {
+  background: #007bff;
+  height: 60px;
+}
+
+.ag-input-field-input.ag-text-field-input {
+  height: 40px;
+  font-size: 1rem !important;
+}
+
+/* ========= Button Styles ========= */
+
+button[variant][color] {
+  padding: 5px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+button[variant][color]:hover {
+  /* background-color: black; */
+  /* color: grey; */
+}
+
+button[variant][color]:focused {
+  outline: none;
+}
+
+button[variant][color]:disabled {
+  color: lightgrey !important;
+  border-color: lightgrey !important;
+  background: whitesmoke !important;
+}
+
+button[variant='outlined'][color='primary'] {
+  color: dodgerblue;
+  border-color: dodgerblue;
+}
+
+button[variant='contained'][color='primary'] {
+  background-color: dodgerblue;
+  border-color: dodgerblue;
+  color: white;
+}
+
+button[variant='outlined'][color='secondary'] {
+  color: #e91e63;
+  border-color: #e91e63;
+}
+
+button[variant='contained'][color='secondary'] {
+  background-color: #e91e63;
+  border-color: #e91e63;
+  color: white;
+}
+
+.add-btn-container > button {
+  width: 120px !important;
+  padding: 10px !important;
+  margin: 8px !important;
+}
+
+.add-btn-container > button[variant][color]:disabled {
+  background-color: inherit !important;
+  opacity: 0.7;
+}

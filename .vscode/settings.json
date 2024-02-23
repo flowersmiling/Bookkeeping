@@ -1,0 +1,40 @@
+{
+  "editor.formatOnSave": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsx]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[tsx]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "eslint.workingDirectories": ["./apps/server, ./apps/web"],
+  "explorer.fileNesting.patterns": {
+    "package.json": ".editorconfig, .eslintrc.js, .npmrc, .nvmrc, .prettierrc, pnpm-lock.yaml, pnpm-workspace.yaml, tsconfig*.json, turbo.json, .npmignore, .histoire.ts, *config.ts, *config.js",
+    ".gitignore": ".dockerignore, .eslintignore, .npmignore, .prettierignore",
+    "dockerfile": "dockerfile*",
+    "*.ts": "$(capture).js, $(capture).*.ts, $(capture)_*.js, $(capture)_*.ts"
+  },
+  "explorer.excludeGitIgnore": false
+}

@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "lib": ["esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "baseUrl": "./src",
+    "outDir": "build",
+    "noEmit": true
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "extends": "tsconfig/server.json",
+  "include": ["src/**/*.ts", "src/services/database.service.ts"],
+  "exclude": ["node_modules", ".turbo", "coverage", "build", "src/**/*.test.ts"]
+}

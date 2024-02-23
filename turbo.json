@@ -1,0 +1,25 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**"]
+    },
+    "lint": {
+      "outputs": []
+    },
+    "format": {},
+    "dev": {
+      "cache": false,
+      "env": [
+        "PORT",
+        "DB_CONN_STRING",
+        "DB_NAME",
+        "DB_COLLECTION_NAME",
+        "JWT_SECRET",
+        "NEXT_PUBLIC_API_URL"
+      ]
+    },
+    "start": {}
+  }
+}
